@@ -16,7 +16,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Agro<span className="text-agro-green-light">Consult</span></h3>
             <p className="mb-4 text-gray-300">
-              Professional agricultural management and consulting services. Helping farmers maximize productivity and sustainability.
+              Professional agricultural management and consulting services. Helping Kenyan farmers maximize productivity and sustainability.
             </p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" className="text-gray-300 hover:text-white">
@@ -43,6 +43,7 @@ const Footer = () => {
               <li><Link to="/services" className="text-gray-300 hover:text-white">Our Services</Link></li>
               <li><Link to="/case-studies" className="text-gray-300 hover:text-white">Case Studies</Link></li>
               <li><Link to="/blog" className="text-gray-300 hover:text-white">Blog</Link></li>
+              <li><Link to="/book-consultation" className="text-gray-300 hover:text-white">Book Consultation</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white">Contact Us</Link></li>
             </ul>
           </div>
@@ -53,15 +54,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <span>123 Farming Lane, Agricultural District, Country</span>
+                <span>Karen Road, Off Ngong Road, Nairobi, Kenya</span>
               </div>
               <div className="flex items-center">
                 <Phone size={18} className="mr-2 flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+254 722 123 456</span>
               </div>
               <div className="flex items-center">
                 <Mail size={18} className="mr-2 flex-shrink-0" />
-                <span>info@agroconsult.com</span>
+                <span>info@agroconsult.co.ke</span>
               </div>
             </div>
           </div>
@@ -70,7 +71,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 border-b border-agro-green-light pb-2">Newsletter</h3>
             <p className="mb-4 text-gray-300">
-              Subscribe to our newsletter for the latest agricultural insights.
+              Subscribe to our newsletter for the latest agricultural insights in Kenya.
             </p>
             <form className="space-y-2">
               <Input
@@ -87,7 +88,7 @@ const Footer = () => {
         
         {/* Bottom Footer */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p>© {year} AgroConsult. All rights reserved.</p>
+          <p>© {year} AgroConsult Kenya. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <Link to="/privacy-policy" className="text-gray-300 hover:text-white mr-4">Privacy Policy</Link>
             <Link to="/terms-of-service" className="text-gray-300 hover:text-white">Terms of Service</Link>

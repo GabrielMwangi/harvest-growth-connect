@@ -43,10 +43,9 @@ const Contact = () => {
                         <div>
                           <h3 className="font-semibold text-lg">Office Address</h3>
                           <p className="text-gray-700">
-                            123 Farming Lane<br />
-                            Agricultural District<br />
-                            City, State 12345<br />
-                            Country
+                            Karen Road, Off Ngong Road<br />
+                            Nairobi, Kenya<br />
+                            P.O. Box 12345-00100
                           </p>
                         </div>
                       </div>
@@ -54,16 +53,16 @@ const Contact = () => {
                         <Phone className="text-agro-green-light mr-4 flex-shrink-0" size={24} />
                         <div>
                           <h3 className="font-semibold text-lg">Phone</h3>
-                          <p className="text-gray-700">+1 (555) 123-4567</p>
-                          <p className="text-gray-700">Toll-free: 1-800-AGRO-CONSULT</p>
+                          <p className="text-gray-700">+254 722 123 456</p>
+                          <p className="text-gray-700">+254 733 987 654</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <Mail className="text-agro-green-light mr-4 flex-shrink-0" size={24} />
                         <div>
                           <h3 className="font-semibold text-lg">Email</h3>
-                          <p className="text-gray-700">info@agroconsult.com</p>
-                          <p className="text-gray-700">support@agroconsult.com</p>
+                          <p className="text-gray-700">info@agroconsult.co.ke</p>
+                          <p className="text-gray-700">support@agroconsult.co.ke</p>
                         </div>
                       </div>
                       <div className="flex items-start">
@@ -120,7 +119,7 @@ const Contact = () => {
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-3xl font-bold text-agro-green-dark mb-4">Find Us</h2>
               <p className="text-gray-700">
-                Visit our office for in-person consultations and meetings.
+                Visit our office in Nairobi for in-person consultations and meetings.
               </p>
             </div>
             {/* Placeholder for Google Maps - In a real implementation, you would integrate the Google Maps API */}
@@ -129,8 +128,8 @@ const Contact = () => {
                 <MapPin size={48} className="text-agro-green-light mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-agro-green-dark mb-2">Our Location</h3>
                 <p className="text-gray-700">
-                  123 Farming Lane, Agricultural District<br />
-                  City, State 12345, Country
+                  Karen Road, Off Ngong Road<br />
+                  Nairobi, Kenya
                 </p>
                 <p className="mt-4 text-sm text-gray-500">
                   (Google Maps integration would be implemented here in a production environment)

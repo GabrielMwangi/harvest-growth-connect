@@ -33,6 +33,7 @@ const Navbar = () => {
     { name: 'Blog', path: '/blog' },
     { name: 'Products', path: '/products' },
     { name: 'Contact', path: '/contact' },
+    { name: 'Book Consultation', path: '/book-consultation' },
   ];
 
   return (
@@ -90,7 +91,7 @@ const Navbar = () => {
               className="bg-agro-green-dark hover:bg-agro-green-light text-white"
               asChild
             >
-              <Link to="/contact">Get Started</Link>
+              <Link to="/book-consultation">Get Started</Link>
             </Button>
           </div>
           
@@ -154,7 +155,7 @@ const Navbar = () => {
               className="w-full bg-agro-green-dark hover:bg-agro-green-light text-white"
               asChild
             >
-              <Link to="/contact" onClick={toggleMenu}>Get Started</Link>
+              <Link to="/book-consultation" onClick={toggleMenu}>Get Started</Link>
             </Button>
           </div>
         </div>
