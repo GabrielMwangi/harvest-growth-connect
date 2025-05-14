@@ -5,54 +5,47 @@ import { Button } from '@/components/ui/button';
 
 const CtaSection = () => {
   return (
-    <section className="py-16 bg-agro-green-dark text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Optimize Your Agricultural Business?</h2>
-            <p className="text-lg text-gray-200 mb-6">
-              Contact our team today to discuss how our consulting services can help you increase productivity, sustainability, and profitability.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                className="bg-white text-agro-green-dark hover:bg-agro-beige px-8 py-6 text-lg"
-                asChild
-              >
-                <Link to="/contact">Contact Us Today</Link>
-              </Button>
-              <Button 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-agro-green-dark px-8 py-6 text-lg"
-                asChild
-              >
-                <Link to="/services">Explore Services</Link>
-              </Button>
-            </div>
-          </div>
-          <div className="hidden md:block relative">
-            <div className="absolute -top-16 -right-16 w-32 h-32 bg-agro-green-light rounded-full opacity-20"></div>
-            <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-agro-green-light rounded-full opacity-20"></div>
-            <div className="relative z-10 bg-white p-8 rounded-lg shadow-xl">
-              <h3 className="text-agro-green-dark text-2xl font-bold mb-4">Our Impact</h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-agro-beige rounded-lg">
-                  <p className="text-3xl font-bold text-agro-green-dark">500+</p>
-                  <p className="text-gray-700">Clients Served</p>
-                </div>
-                <div className="text-center p-4 bg-agro-beige rounded-lg">
-                  <p className="text-3xl font-bold text-agro-green-dark">30%</p>
-                  <p className="text-gray-700">Avg. Yield Increase</p>
-                </div>
-                <div className="text-center p-4 bg-agro-beige rounded-lg">
-                  <p className="text-3xl font-bold text-agro-green-dark">25%</p>
-                  <p className="text-gray-700">Cost Reduction</p>
-                </div>
-                <div className="text-center p-4 bg-agro-beige rounded-lg">
-                  <p className="text-3xl font-bold text-agro-green-dark">15+</p>
-                  <p className="text-gray-700">Years Experience</p>
-                </div>
-              </div>
-            </div>
+    <section className="py-20 relative overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{ 
+          backgroundImage: "url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')", 
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'brightness(0.3) grayscale(20%)'
+        }}
+      ></div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h5 className="text-luxury-gold text-base font-medium uppercase tracking-wider mb-2">Experience Excellence</h5>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+            Elevate Your Protocol Experience
+          </h2>
+          <p className="text-xl text-gray-200 mb-10">
+            Contact our team to discuss your VVIP protocol and concierge requirements in complete confidence.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg"
+              className="bg-luxury-gold hover:bg-luxury-gold/90 text-luxury-dark px-8" 
+              asChild
+            >
+              <Link to="/book-consultation">
+                Request Service
+              </Link>
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-white text-white hover:bg-white/10 px-8"
+              asChild
+            >
+              <Link to="/contact">
+                Contact Us
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

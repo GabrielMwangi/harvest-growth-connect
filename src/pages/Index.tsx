@@ -7,7 +7,8 @@ import HomeServices from '@/components/home/Services';
 import HomeCaseStudies from '@/components/home/CaseStudies';
 import Testimonials from '@/components/home/Testimonials';
 import CtaSection from '@/components/home/CtaSection';
-import BlogPreview from '@/components/home/BlogPreview';
+import ClientPortalSection from '@/components/home/ClientPortalSection';
+import CareerSection from '@/components/home/CareerSection';
 
 const Index = () => {
   return (
@@ -18,7 +19,8 @@ const Index = () => {
         <HomeServices />
         <HomeCaseStudies />
         <Testimonials />
-        <BlogPreview />
+        <ClientPortalSection />
+        <CareerSection />
         <CtaSection />
       </main>
       <Footer />
